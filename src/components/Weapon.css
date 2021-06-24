@@ -19,8 +19,8 @@
 
 .weapon__icon {
   margin-right: 10px;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   background-position: center;
   background-size: cover;
 }
@@ -44,6 +44,8 @@
 
   .weapon__icon {
     margin-right: 0px;
+    height: 100px;
+    width: 100px;
   }
 
   .weapon__about {

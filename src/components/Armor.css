@@ -1,6 +1,6 @@
 .armor {
   padding: 10px 0px;
-  height: 130px;
+  min-height: 130px;
   display: flex;
   flex-wrap: wrap;
   font-size: 1em;
@@ -19,8 +19,8 @@
 
 .armor__icon {
   margin-right: 10px;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   background-position: center;
   background-size: cover;
 }
@@ -40,7 +40,10 @@
 
   .armor__icon {
     margin-right: 0px;
+    height: 100px;
+    width: 100px;
   }
+
   .armor__about {
     flex-direction: column;
     width: 100%;
