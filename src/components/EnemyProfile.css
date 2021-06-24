@@ -1,6 +1,6 @@
 .arena-window__enemy {
   width: calc(100% - 30px);
-  margin: 15px 15px 15px 15px;
+  margin: 5px 15px 15px 15px;
   padding: 10px 35px;
   border-radius: 20px 20px 20px 20px;
   background-color: gold;
@@ -15,7 +15,7 @@
 }
 
 .arena-window__enemy-avatar {
-  margin: 30px 0px 20px 0px;
+  margin: 20px 0px 20px 0px;
   height: 100px;
   width: 100px;
   background-position: center;
@@ -61,6 +61,7 @@
 @media screen and (min-width: 768px) {
   .arena-window__enemy {
     height: 40vh;
+    margin: 15px 15px 15px 15px;
     width: calc(40% - 30px);
     justify-content: center;
   }
