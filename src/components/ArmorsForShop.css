@@ -1,0 +1,46 @@
+/* MOBILE FIRST */
+
+.armors-wrapper {
+  margin: 0px 35px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.armors-heading {
+  padding: 10px;
+  font-size: 1.7em;
+}
+
+.armors-about {
+  font-size: 1.3em;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.armors-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .armors-items {
+    width: 80%;
+  }
+
+  .armors-about {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .armors-wrapper {
+    margin: 0px 65px;
+  }
+  .armors-items {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

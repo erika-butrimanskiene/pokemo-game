@@ -1,0 +1,67 @@
+.weapon {
+  padding: 10px 0px;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weapon__about {
+  display: flex;
+  align-items: center;
+}
+
+.weapon-button {
+  width: 80px;
+}
+
+.weapon__icon {
+  margin-right: 10px;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.weapon__info span {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.special {
+  padding: 10px 10px 15px 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  .weapon {
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .weapon__icon {
+    margin-right: 0px;
+  }
+
+  .weapon__about {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .weapon__info-container {
+    text-align: center;
+  }
+
+  .special {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .special span {
+    text-align: center;
+  }
+}

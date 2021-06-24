@@ -1,0 +1,83 @@
+.arena-window__enemy {
+  width: calc(100% - 30px);
+  margin: 15px 15px 15px 15px;
+  padding: 10px 35px;
+  border-radius: 20px 20px 20px 20px;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.arena-window__enemy-name {
+  text-align: center;
+  color: var(--white-color);
+}
+
+.arena-window__enemy-avatar {
+  margin: 30px 0px 20px 0px;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.arena-window__enemy-avatar-animation {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.arena-window__enemy-status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .arena-window__enemy {
+    height: 40vh;
+    width: calc(40% - 30px);
+    justify-content: center;
+  }
+
+  .arena-window__enemy-name {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .arena-window__enemy {
+    height: 50vh;
+    width: calc(40% - 30px);
+  }
+
+  .arena-window__enemy-avatar {
+    height: 140px;
+    width: 140px;
+  }
+}

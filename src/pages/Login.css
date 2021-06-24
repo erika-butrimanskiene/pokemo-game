@@ -1,0 +1,81 @@
+.login-wrapper {
+  height: 100vh;
+  background-color: var(--dark-gray);
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-heading {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.login-heading p {
+  font-size: 3em;
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  height: 40%;
+  width: 100%;
+}
+
+.login-form__username,
+.login-form__password {
+  font-family: var(--main-font);
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  width: 70%;
+  font-size: 1em;
+  background-color: var(--contact-input-color);
+}
+
+.login-form__username::placeholder,
+.login-form__password::placeholder {
+  color: rgb(39, 38, 38);
+}
+
+.login-form__username:focus,
+.login-form__password:focus {
+  outline: none;
+}
+
+#login-submit {
+  width: 200px;
+}
+
+.login-error-msg {
+  font-size: 0.7em;
+}
+
+.signUp-link {
+  padding: 0px 35px 20px 35px;
+  text-align: center;
+}
+
+.signUp-link a {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--second-color);
+}
+
+@media screen and (min-width: 768px) {
+  .login-form__username,
+  .login-form__password {
+    width: 30%;
+  }
+}

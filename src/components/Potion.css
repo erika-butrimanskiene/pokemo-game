@@ -1,0 +1,52 @@
+.potion {
+  padding: 10px 0px;
+  height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.potion__about {
+  display: flex;
+  align-items: center;
+}
+
+.potion-button {
+  width: 80px;
+}
+
+.potion__icon {
+  margin-right: 10px;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.potion__info span {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 1025px) {
+  .potion {
+    height: auto;
+    width: 33.33%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .potion__icon {
+    margin-right: 0px;
+  }
+  .potion__about {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .potion__info-container {
+    text-align: center;
+  }
+}

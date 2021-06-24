@@ -1,0 +1,53 @@
+.inventory-window-wrapper {
+  padding-bottom: 45px;
+  min-height: 100vh;
+  background-image: linear-gradient(var(--accent-color), rgb(15, 195, 219));
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.inventory-window__back {
+  width: 80%;
+  padding: 25px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+}
+
+.inventory-window-heading {
+  font-size: 2em;
+  padding: 10px 0px 40px 0px;
+  width: 80%;
+  text-align: center;
+}
+
+.inventory-window {
+  padding: 25px;
+  width: 80%;
+  background-color: rgba(255, 255, 255);
+  border-radius: 20px;
+  color: var(--dark-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .inventory-window__back {
+    width: 60%;
+  }
+
+  .inventory-window {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .inventory-window {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}

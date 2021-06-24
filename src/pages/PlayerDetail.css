@@ -1,0 +1,179 @@
+.player-detail-window-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(var(--accent-color), rgb(15, 195, 219));
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.player-detail__back {
+  width: 85%;
+  max-width: 800px;
+  padding: 25px 0px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  color: white;
+  text-decoration: none;
+}
+
+.player-detail {
+  margin: 30px 0px 25px 0px;
+  width: 85%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 15px;
+  color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-detail__about-user {
+  border-radius: 15px 15px 0px 0px;
+  background-color: var(--second-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.player-detail__avatar-username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-detail__avatar {
+  margin: 30px 0px 20px 0px;
+  height: 80px;
+  width: 80px;
+  background-position: center;
+  background-size: cover;
+}
+
+.player-detail__username {
+  padding-bottom: 15px;
+  color: gold;
+}
+
+.player-detail__gold-health {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px 10px 20px;
+}
+
+.player-detail__gold {
+  padding-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-detail__gold span {
+  padding-right: 5px;
+  font-weight: bolder;
+  color: white;
+  font-size: 1.5em;
+}
+
+.player-detail__inventory-list-heading {
+  padding: 25px 0px;
+}
+
+.player-detail__inventory-list {
+  padding-bottom: 20px;
+  display: flex;
+  width: 95%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.player-detail__inventory {
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  color: black;
+}
+
+.player-detail__inventory-icon {
+  margin-right: 25px;
+  height: 100px;
+  width: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
+.player-detail__inventory-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.player-detail__inventory-info {
+  text-align: right;
+  padding: 0px 15px;
+}
+
+.player-detail__inventory-info span {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 768px) {
+  .player-detail__inventory-icon {
+    margin-right: 0px;
+  }
+  .player-detail__inventory-list {
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .player-detail__inventory {
+    flex-direction: column;
+    justify-content: center;
+    width: 33.33%;
+  }
+
+  .player-detail__inventory-info-container {
+    align-items: center;
+  }
+
+  .player-detail__inventory-info {
+    text-align: center;
+  }
+
+  .player-detail__inventory-info span {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .player-detail__back {
+    max-width: 1000px;
+  }
+
+  .player-detail {
+    max-width: 1000px;
+  }
+
+  .player-detail__gold-health {
+    width: 60%;
+  }
+
+  .player-detail__inventory {
+    width: 25%;
+  }
+}

@@ -1,0 +1,83 @@
+.signup-wrapper {
+  height: 100vh;
+  background-color: var(--dark-gray);
+  color: var(--white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60%;
+  width: 100%;
+}
+
+.signup-heading {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.signup-form label {
+  width: 70%;
+}
+
+.signup-form__userName,
+.signup-form__password,
+.signup-form__passwordSecond {
+  font-family: var(--main-font);
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid white;
+  color: var(--accent-color);
+  width: 70%;
+  font-size: 1em;
+  background-color: transparent;
+}
+
+.signup-form__userName::placeholder,
+.signup-form__password::placeholder,
+.signup-form__passwordSecond::placeholder {
+  font-size: 0.7em;
+}
+
+.signup-form__userName:focus,
+.signup-form__password:focus,
+.signup-form__passwordSecond:focus {
+  outline: none;
+}
+
+#signup-submit {
+  width: 200px;
+}
+
+.error-msg {
+  width: 70%;
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .signup-form label {
+    width: 40%;
+  }
+
+  .signup-form__userName,
+  .signup-form__password,
+  .signup-form__passwordSecond {
+    width: 40%;
+  }
+
+  .error-msg {
+    width: 40%;
+  }
+}

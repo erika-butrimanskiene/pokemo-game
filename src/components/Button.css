@@ -1,0 +1,54 @@
+.button {
+  margin: 25px 0px 25px 0px;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  font-family: var(--main-font);
+  font-size: 1.2em;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.btn-pink {
+  background-color: var(--second-color);
+  color: white;
+  padding: 5px;
+}
+
+.btn-red {
+  background-color: rgb(204, 1, 1);
+  color: white;
+  padding: 5px;
+}
+
+.btn-blue {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 5px;
+}
+
+.btn-white {
+  background-color: white;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.btn-small {
+  width: 80px;
+  font-size: 1em;
+}
+
+.btn-blue:hover {
+  transform: scale(1.1);
+}
+
+.btn-white:hover {
+  transform: scale(1.1);
+}
+
+.button:focus {
+  outline: none;
+}
