@@ -8,6 +8,8 @@
 }
 
 .game-window__edit-profile {
+  display: flex;
+  align-items: center;
   padding-top: 20px;
   padding-left: 25px;
   width: 100%;
