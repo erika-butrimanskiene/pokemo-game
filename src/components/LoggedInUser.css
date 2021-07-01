@@ -16,6 +16,10 @@
   color: white;
 }
 
+.game-window__edit-profile span {
+  padding-left: 10px;
+}
+
 .game-window__player-details {
   width: 100%;
   display: flex;
