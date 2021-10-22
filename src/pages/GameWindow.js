@@ -27,7 +27,7 @@ function GameWindow() {
   const [editMsg, setEditMsg] = useState('');
 
   //ENDPOINTS
-  const URL = 'https://pokemo-game.herokuapp.com/user/logout';
+  const URL = 'https://jsonp.afeld.me/?url=https://pokemo-game.herokuapp.com/user/logout';
 
   //FUNCTIONS
   //-- handle user logout
