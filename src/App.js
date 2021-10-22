@@ -39,7 +39,7 @@ function App() {
   //FUNCTIONS
 
   const invokeGetUserFetch = () => {
-    const URL = 'https://pokemo-game.herokuapp.com/user';
+    const URL = 'https://jsonp.afeld.me/?url=https://pokemo-game.herokuapp.com/user';
     const token = localStorage.getItem('game-auth');
     const getUser = async () => {
       const response = await fetch(URL, {
